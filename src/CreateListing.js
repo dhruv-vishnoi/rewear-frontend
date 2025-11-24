@@ -27,7 +27,7 @@ export default function CreateListing() {
     formData.append("ownerId", user._id);
 
     try {
-      const res = await axios.post("http://rewear-backend-a1uz.onrender.com/api/products/create", formData, {
+      const res = await axios.post("https://rewear-backend-2.onrender.com/api/products/create", formData, {
         headers: { "Content-Type": "multipart/form-data" }
       });
 

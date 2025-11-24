@@ -9,20 +9,20 @@ export default function SwapRequests() {
     if (!user) return;
   
     axios
-      .get(`http://rewear-backend-a1uz.onrender.com/api/swaps/${user._id}`)
+      .get(`https://rewear-backend-2.onrender.com/api/swaps/${user._id}`)
       .then((res) => setRequests(res.data))
       .catch((err) => console.log(err));
   }, [user]); // add user here
   
 
   const handleAccept = async (id) => {
-    await axios.post(`http://rewear-backend-a1uz.onrender.com/api/swaps/accept/${id}`);
+    await axios.post(`https://rewear-backend-2.onrender.com/api/swaps/accept/${id}`);
     alert("Swap Accepted!");
     window.location.reload();
   };
 
   const handleReject = async (id) => {
-    await axios.post(`http://rewear-backend-a1uz.onrender.com/api/swaps/reject/${id}`);
+    await axios.post(`https://rewear-backend-2.onrender.com/api/swaps/reject/${id}`);
     alert("Swap Rejected!");
     window.location.reload();
   };

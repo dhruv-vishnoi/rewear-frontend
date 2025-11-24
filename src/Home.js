@@ -12,7 +12,7 @@ export default function Home() {
 
   useEffect(() => {
     axios
-      .get("http://rewear-backend-a1uz.onrender.com/api/products")
+      .get("https://rewear-backend-2.onrender.com/api/products")
       .then((res) => setProducts(res.data))
       .catch((err) => console.log(err));
   }, []);

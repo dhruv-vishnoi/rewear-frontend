@@ -10,7 +10,7 @@ export default function ProductPage() {
 
   useEffect(() => {
     axios
-      .get(`http://rewear-backend-a1uz.onrender.com/api/products/${id}`)
+      .get(`https://rewear-backend-2.onrender.com/api/products/${id}`)
       .then((res) => setProduct(res.data))
       .catch((err) => console.log(err));
   }, [id]);

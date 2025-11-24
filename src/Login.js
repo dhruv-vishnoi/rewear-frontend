@@ -11,7 +11,7 @@ export default function Login() {
     e.preventDefault();
 
     try {
-      const res = await axios.post("http://rewear-backend-a1uz.onrender.com/api/auth/login", {
+      const res = await axios.post("https://rewear-backend-2.onrender.com/api/auth/login", {
         email,
         password,
       });

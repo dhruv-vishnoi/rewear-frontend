@@ -12,7 +12,7 @@ export default function Register() {
     e.preventDefault();
 
     try {
-      const res = await axios.post("http://rewear-backend-a1uz.onrender.com/api/auth/register", {
+      const res = await axios.post("https://rewear-backend-2.onrender.com/api/auth/register", {
         name,
         email,
         password,
